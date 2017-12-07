@@ -170,7 +170,7 @@
         gutter: 20px,
         v-margin: 'top',
         use: 'inline-block',
-        font-size: $font-size-small,
+        font-size: 14px,
     );
 
     $args: map-merge($defaults, $args);

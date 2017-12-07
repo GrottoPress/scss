@@ -2,7 +2,7 @@
 
 Sass utilities: Mixins, variables and functions.
 
-## Installatioin
+## Installation
 
 1. Run `npm install @grottopress/scss`
 1. Import into your project.

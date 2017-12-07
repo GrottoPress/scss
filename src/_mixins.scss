@@ -137,20 +137,22 @@
 @mixin position($position: relative, $offsets: ()) {
     position: $position;
 
-    @if nth($offsets, 1) {
-        top: nth($offsets, 1);
-    }
+    @if length($offsets) > 0 {
+        @if nth($offsets, 1) {
+            top: nth($offsets, 1);
+        }
 
-    @if nth($offsets, 2) {
-        right: nth($offsets, 2);
-    }
+        @if nth($offsets, 2) {
+            right: nth($offsets, 2);
+        }
 
-    @if nth($offsets, 3) {
-        bottom: nth($offsets, 3);
-    }
+        @if nth($offsets, 3) {
+            bottom: nth($offsets, 3);
+        }
 
-    @if nth($offsets, 4) {
-        left: nth($offsets, 4);
+        @if nth($offsets, 4) {
+            left: nth($offsets, 4);
+        }
     }
 }
 

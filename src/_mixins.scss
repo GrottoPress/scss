@@ -213,3 +213,15 @@
         }
     }
 }
+
+/// Opacity
+///
+/// @param {number} $opacity
+///
+/// @since 0.1.8
+@mixin opacity($opacity) {
+    $ie: $opacity * 100;
+
+    -ms-filter: 'alpha(opacity=#{$ie})'; /* For IE8 and later */
+    opacity: $opacity;
+}

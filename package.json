@@ -1,6 +1,6 @@
 {
     "name": "@grottopress/scss",
-    "version": "0.1.8",
+    "version": "0.1.9",
     "description": "Sass utilities: Mixins, variables and functions.",
     "license": "MIT",
     "author": {

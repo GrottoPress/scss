@@ -53,6 +53,16 @@
     -webkit-box-sizing: $sizing;
     -moz-box-sizing: $sizing;
     box-sizing: $sizing;
+
+    *,
+    *::before,
+    *::after,
+    &::before,
+    &::after, {
+        -webkit-box-sizing: inherit;
+        -moz-box-sizing: inherit;
+        box-sizing: inherit;
+    }
 }
 
 /// Border Radius

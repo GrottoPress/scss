@@ -188,7 +188,6 @@
 
     $width: map-get($args, width);
     $gutter: map-get($args, gutter );
-    $v-margin: map-get($args, v-margin);
     $columns: map-get($args , columns );
 
     $half-gutter: ($gutter / 2);

@@ -7,8 +7,11 @@
 /// @author [N Atta Kus Adusei](https://twitter.com/akadusei)
 ////
 
-/// Full screen
-@mixin full-screen {
+/// Full width
+///
+/// Used to force a full width background when
+/// containing element is not full width
+@mixin full-width {
     margin-right: -9999px;
     margin-left: -9999px;
     padding-right: 9999px;

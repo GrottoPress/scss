@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## 0.3.0 - 
 
+### Added
+- Flex box mixins
+
 ### Changed
 - Rename `full-screen()` mixin to `full-width()`
 

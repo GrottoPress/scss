@@ -240,3 +240,36 @@
     -ms-filter: 'alpha(opacity=#{$ie})'; /* For IE8 and later */
     opacity: $opacity;
 }
+
+/// Flex box
+///
+/// @see https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+@mixin flexbox {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+/// Flex
+///
+/// @see https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+@mixin flex($values) {
+    -webkit-box-flex: $values;
+    -moz-box-flex: $values;
+    -webkit-flex: $values;
+    -ms-flex: $values;
+    flex: $values;
+}
+
+/// Flex box order
+///
+/// @see https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+@mixin order($val) {
+    -webkit-box-ordinal-group: $val;  
+    -moz-box-ordinal-group: $val;     
+    -ms-flex-order: $val;     
+    -webkit-order: $val;  
+    order: $val;
+}

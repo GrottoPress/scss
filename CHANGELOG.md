@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Changed
 - Rename `full-screen()` mixin to `full-width()`
+- Redo `grid()` mixin using flex box and margins
 
 ## 0.2.1 - 2018-07-16
 

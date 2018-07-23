@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Added
 - Flex box mixins
+- `_all.scss` that imports all scss files.
 
 ### Changed
 - Rename `full-screen()` mixin to `full-width()`

@@ -39,7 +39,6 @@ Import into your project, thus:
 ```scss
 .modal {
     @include size(400px);
-    @include border-radius(5px);
     @include position(absolute, 20% null null 20%);
     // ...
 }

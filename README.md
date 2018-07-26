@@ -45,7 +45,7 @@ Import into your project, thus:
 
 .grid {
     @include paragraph;
-    @include grid((columns: 3, gutter: 2%));
+    @include grid((width: 25%, gutter: 20px));
     // ...
 }
 ```

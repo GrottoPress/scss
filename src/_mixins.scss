@@ -147,36 +147,34 @@
 
 /// Grid
 ///
-/// To be included in the grids wrapper
+/// To be used in the grids wrapper
 ///
 /// @param {map} $args -
-///   'columns' {number} Number of columns
-///   'gutter' {number} Size of horizontal space between columns in `%`
+///   'width' {number} Width of each column
+///   'gutter' {number} Size of spaces between columns
 @mixin grid($args: ()) {
-    $args: map-merge((columns: 2, gutter: 2%), $args);
-    $gutter: strip-units(map-get($args, gutter)) * 1%;
-    $columns: strip-units(map-get($args, columns));
-    $width: (99.9% - ($gutter * ($columns - 1))) / $columns;
+    $args: map-merge((width: 100%, gutter: 20px), $args);
+    $width: map-get($args, width);
+    $gutter: map-get($args, gutter);
+    $half-gutter: ($gutter / 2);
 
     @include box-sizing(border-box);
 
     display: flex;
     flex-wrap: wrap;
+    margin: -#{$half-gutter};
+
+    &:first-child {
+        margin-top: -#{$half-gutter};
+    }
+
+    &:last-child {
+        margin-bottom: -#{$half-gutter};
+    }
 
     > * {
-        flex: 0 0 $width;
-
-        &,
-        &:nth-child(n) {
-            margin: $gutter 0 0 $gutter;
-        }
-
-        &:nth-child(-n + #{$columns}) {
-            margin-top: 0;
-        }
-
-        &:nth-child(#{$columns}n + 1) {
-            margin-left: 0;
-        }
+        width: $width;
+        margin: 0;
+        padding: $half-gutter;
     }
 }
